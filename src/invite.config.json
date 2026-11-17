@@ -1,0 +1,87 @@
+{
+  "groom": "Sumit Rathee",
+  "bride": "Kanishka Goyal",
+  "titleLine": "Kanishka Goyal weds Sumit Rathee",
+  "date": "2026-11-26",
+  "weekday": "Thursday",
+  "time": "",
+  "families": {
+    "groomSide": {
+      "label": "",
+      "lines": [
+        "Son of",
+        "Late Shri. Surender Singh Rathee",
+        "&",
+        "Smt. Bala Devi",
+        "Grandson of",
+        "Late Shri. Daljeet Singh Rathee",
+        "&",
+        "Late Smt. Shoba Devi"
+      ]
+    },
+    "brideSide": {
+      "label": "",
+      "lines": [
+        "Daughter of",
+        "Shri. Sudarshan Goyal",
+        "&",
+        "Smt. Babita Goyal",
+        "Granddaughter of",
+        "Late Shri. Mange Ram Goyal",
+        "&",
+        "Late Smt. Krishna Devi"
+      ]
+    }
+  },
+  "events": [
+    {
+      "name": "Haldi",
+      "date": "2026-11-25",
+      "time": "11:00 AM",
+      "venueName": "Rohini, Sector 22, Pocket 12, Delhi",
+      "address": "",
+      "mapsQuery": "Rohini Sector 22 Pocket 12, Delhi"
+    },
+    {
+      "name": "Mehendi",
+      "date": "2026-11-25",
+      "time": "4:00 PM",
+      "venueName": "Rohini, Sector 22, Pocket 12, Delhi",
+      "address": "",
+      "mapsQuery": "Rohini Sector 22 Pocket 12, Delhi"
+    },
+    {
+      "name": "Vivaah",
+      "date": "2026-11-26",
+      "time": "11:00 AM",
+      "venueName": "Royal Pepper Banquet Hall (Krish): Wazirpur",
+      "address": "C-94, Ring Rd, Block B, Poorbi Shalimar Bag, Ashok Vihar, Delhi, 110052",
+      "mapsQuery": "Royal Pepper Banquet hall (Krish): Wazirpur, C-94, Ring Rd, Block B, Poorbi Shalimar Bag, Ashok Vihar, Delhi, 110052"
+    }
+  ],
+  "quotes": [
+    "Two souls, one story.",
+    "Join us as we begin forever.",
+    "Every love story is beautiful, but ours is our favourite."
+  ],
+  "photos": [
+    "/assets/gallery/portrait-close.jpg",
+    "/assets/gallery/mehendi-hands.jpg",
+    "/assets/gallery/portrait-full.jpg",
+    "/assets/gallery/formal-portrait.png"
+  ],
+  "compliments": [
+    "Shri. Shyam Lal Goyal & Family (Tau-Tai)",
+    "Shri. Sunil Goyal & Family (Tau-Tai)",
+    "Brothers",
+    "Ashish Goyal, Ankit Goyal, Harsh Goyal",
+    "Special Invitation From Sanvi Rathee (Lado)"
+  ],
+  "thingsToNote": [
+    "Your presence is the greatest gift we could ask for.",
+    "Complimentary valet parking will be available at the main entrance."
+  ],
+  "instagram": "",
+  "whatsappRsvp": "",
+  "music": "/audio/theme.mp3"
+}

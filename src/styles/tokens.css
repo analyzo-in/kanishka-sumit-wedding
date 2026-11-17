@@ -1,0 +1,114 @@
+/* ── Design Tokens ── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* Maroon palette */
+  --deep-maroon: #6b1a2a;
+  --deep-maroon-dark: #4a0f1c;
+  --rich-maroon: #7a1f33;
+  --ink: #3a1a20;
+
+  /* Gold palette */
+  --gold: #c8963e;
+  --gold-highlight: #e8c47a;
+  --gold-shadow: #9a6a1e;
+  --gold-foil: linear-gradient(135deg, #c8963e 0%, #e8c47a 40%, #c8963e 60%, #9a6a1e 100%);
+
+  /* Neutrals */
+  --ivory: #f7f1e6;
+  --cream: #fffaf0;
+  --blush: #e58aa0;
+
+  /* Sunset */
+  --peach-start: #f3c9a0;
+  --peach-end: #e9a889;
+  --sky-start: #bcd3ee;
+  --sky-end: #f6d5c4;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-script: 'Great Vibes', 'Pinyon Script', cursive;
+  --font-label: 'Jost', 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-display);
+  color: var(--ink);
+  background: var(--deep-maroon);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Desktop wrapper ── */
+@media (min-width: 481px) {
+  body {
+    background: var(--deep-maroon);
+    display: flex;
+    justify-content: center;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(107,26,42,0.6) 0%, rgba(74,15,28,0.95) 100%);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+  }
+  #root {
+    max-width: 480px;
+    width: 100%;
+    min-height: 100dvh;
+    position: relative;
+    box-shadow: 0 0 80px rgba(0,0,0,0.5);
+  }
+}
+
+/* ── Utility ── */
+.scene {
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Font imports (self-hosted via Google Fonts as fallback) ── */

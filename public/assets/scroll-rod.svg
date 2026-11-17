@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 30" width="500" height="30">
+  <defs>
+    <linearGradient id="rodGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c47a"/>
+      <stop offset="30%" stop-color="#c8963e"/>
+      <stop offset="70%" stop-color="#9a6a1e"/>
+      <stop offset="100%" stop-color="#e8c47a"/>
+    </linearGradient>
+  </defs>
+  <!-- Main rod -->
+  <rect x="30" y="8" width="440" height="14" rx="7" fill="url(#rodGold)"/>
+  <!-- Left finial -->
+  <ellipse cx="30" cy="15" rx="16" ry="15" fill="url(#rodGold)"/>
+  <ellipse cx="30" cy="15" rx="10" ry="10" fill="#c8963e" opacity="0.6"/>
+  <circle cx="30" cy="15" r="5" fill="#e8c47a" opacity="0.5"/>
+  <!-- Right finial -->
+  <ellipse cx="470" cy="15" rx="16" ry="15" fill="url(#rodGold)"/>
+  <ellipse cx="470" cy="15" rx="10" ry="10" fill="#c8963e" opacity="0.6"/>
+  <circle cx="470" cy="15" r="5" fill="#e8c47a" opacity="0.5"/>
+</svg>
+
