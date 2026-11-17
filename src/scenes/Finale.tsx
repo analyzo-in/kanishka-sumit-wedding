@@ -3,6 +3,7 @@ import { gsap } from '../lib/scroll';
 import { getMapsUrl } from '../lib/maps';
 import { downloadICS } from '../lib/calendar';
 import { shareInvite } from '../lib/share';
+import { asset } from '../lib/assets';
 
 interface FinaleProps {
   config: {
@@ -150,7 +151,7 @@ export default function Finale({ config }: FinaleProps) {
         overflow: 'hidden',
       }}
     >
-      <img src="/assets/mandap-garden-v2.png" alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center bottom', opacity: 0.9 }} />
+      <img src={asset('assets/mandap-garden-v2.png')} alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center bottom', opacity: 0.9 }} />
       <div aria-hidden="true" style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(54,8,20,.12), rgba(54,8,20,.64))', zIndex: 0 }} />
       {/* Palace silhouettes */}
       <div style={{

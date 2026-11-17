@@ -1,4 +1,5 @@
 import { InvitationScroll } from './FamilyScroll';
+import { asset } from '../lib/assets';
 
 interface ComplimentsProps {
   config: {
@@ -19,7 +20,7 @@ export default function Compliments({ config }: ComplimentsProps) {
         style={{
           width: '100%',
           height: '34px',
-          backgroundImage: "url('/assets/torn-paper-edge.svg')",
+          backgroundImage: `url('${asset('assets/torn-paper-edge.svg')}')`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'bottom center',

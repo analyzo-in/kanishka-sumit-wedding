@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { gsap, ScrollTrigger } from '../lib/scroll';
+import { asset } from '../lib/assets';
 
 /* ── Tokens ── */
 const T = {
@@ -61,7 +62,7 @@ function LotusCrown() {
       <circle cx="135" cy="70" r="3" fill={T.blush} opacity="0.5" />
       {/* Base line */}
       <line x1="30" y1="110" x2="170" y2="110" stroke="url(#lcGold)" strokeWidth="1" opacity="0.4" />
-      <image href="/assets/date-lotus-crown-v2.png" x="0" y="13" width="200" height="88" preserveAspectRatio="xMidYMid meet" />
+      <image href={asset('assets/date-lotus-crown-v2.png')} x="0" y="13" width="200" height="88" preserveAspectRatio="xMidYMid meet" />
     </svg>
   );
 }
@@ -116,8 +117,8 @@ function Plaque({
       {/* Plaque body */}
       <div style={{
         background: `linear-gradient(135deg, ${T.richMaroon}, ${T.deepMaroon})`,
-        WebkitMaskImage: "url('/assets/plaque.svg')",
-        maskImage: "url('/assets/plaque.svg')",
+        WebkitMaskImage: `url('${asset('assets/plaque.svg')}')`,
+        maskImage: `url('${asset('assets/plaque.svg')}')`,
         WebkitMaskSize: '100% 100%',
         maskSize: '100% 100%',
         WebkitMaskRepeat: 'no-repeat',
@@ -132,7 +133,7 @@ function Plaque({
         position: 'relative',
         overflow: 'visible',
       }}>
-        <img src="/assets/plaque-outline.svg" alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }} />
+        <img src={asset('assets/plaque-outline.svg')} alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }} />
         <div
           ref={innerRef}
           style={{
@@ -199,7 +200,7 @@ function CeremonyElephant({ facing }: { facing: 'left' | 'right' }) {
       <path d="M20 30 Q30 22 40 30" fill="none" stroke={T.goldHi} strokeWidth="1.5" />
       <circle cx="30" cy="28" r="3" fill={T.richMaroon} stroke={T.goldHi} strokeWidth="1" />
       </g>
-      <image href="/assets/date-elephant-v2.png" x="0" y="10" width="120" height="95" preserveAspectRatio="xMidYMid meet" />
+      <image href={asset('assets/date-elephant-v2.png')} x="0" y="10" width="120" height="95" preserveAspectRatio="xMidYMid meet" />
     </svg>
   );
 }

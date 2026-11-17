@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from '../lib/scroll';
 import { getMapsUrl } from '../lib/maps';
+import { asset } from '../lib/assets';
 
 interface WeddingEvent {
   name: string;
@@ -134,8 +135,8 @@ function EventCard({ event }: { event: WeddingEvent }) {
       className="event-card"
       style={{
         background: '#d3a54e',
-        maskImage: "url('/assets/mughal-gate-mask.svg')",
-        WebkitMaskImage: "url('/assets/mughal-gate-mask.svg')",
+        maskImage: `url('${asset('assets/mughal-gate-mask.svg')}')`,
+        WebkitMaskImage: `url('${asset('assets/mughal-gate-mask.svg')}')`,
         maskSize: '100% 100%',
         WebkitMaskSize: '100% 100%',
         maskRepeat: 'no-repeat',
@@ -151,8 +152,8 @@ function EventCard({ event }: { event: WeddingEvent }) {
     >
       <div style={{
         background: '#fffaf0',
-        maskImage: "url('/assets/mughal-gate-mask.svg')",
-        WebkitMaskImage: "url('/assets/mughal-gate-mask.svg')",
+        maskImage: `url('${asset('assets/mughal-gate-mask.svg')}')`,
+        WebkitMaskImage: `url('${asset('assets/mughal-gate-mask.svg')}')`,
         maskSize: '100% 100%',
         WebkitMaskSize: '100% 100%',
         maskRepeat: 'no-repeat',
@@ -167,7 +168,7 @@ function EventCard({ event }: { event: WeddingEvent }) {
         <div style={{
           position: 'absolute',
           top: '31px', left: '12%', width: '76%', height: '104px',
-          backgroundImage: "url('/assets/event-ceremony-strip-cutout-v2.png')",
+          backgroundImage: `url('${asset('assets/event-ceremony-strip-cutout-v2.png')}')`,
           backgroundSize: '300% auto',
           backgroundPosition: `${ceremonyPanelPosition(event.name)} 50%`,
           backgroundRepeat: 'no-repeat',
@@ -281,7 +282,7 @@ export default function Events({ config }: EventsProps) {
       className="scene"
       style={{
         background: '#7a1f33',
-        backgroundImage: "radial-gradient(ellipse at 50% 0%, rgba(232,196,122,0.18), transparent 42%), radial-gradient(ellipse at 8% 74%, rgba(74,15,28,0.42), transparent 38%), radial-gradient(ellipse at 92% 74%, rgba(74,15,28,0.42), transparent 38%), url('/assets/jaali-pattern.svg')",
+        backgroundImage: `radial-gradient(ellipse at 50% 0%, rgba(232,196,122,0.18), transparent 42%), radial-gradient(ellipse at 8% 74%, rgba(74,15,28,0.42), transparent 38%), radial-gradient(ellipse at 92% 74%, rgba(74,15,28,0.42), transparent 38%), url('${asset('assets/jaali-pattern.svg')}')`,
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto, auto, auto, 190px 190px',
         backgroundBlendMode: 'normal, normal, normal, overlay',

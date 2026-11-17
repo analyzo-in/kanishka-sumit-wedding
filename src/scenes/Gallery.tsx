@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '../lib/scroll';
+import { asset } from '../lib/assets';
 
 /* ── Tokens ── */
 const T = {
@@ -74,7 +75,7 @@ export function DomeVignette() {
         position: 'relative',
       }}>
         <img
-          src="/assets/mandap-garden-v2.png"
+          src={asset('assets/mandap-garden-v2.png')}
           alt=""
           style={{
             width: '100%',
@@ -175,7 +176,7 @@ function PhotoFrame({
         }}>
           {hasPhoto ? (
             <img
-              src={src}
+              src={asset(src)}
               alt={`${groom} & ${bride}`}
               style={{
                 width: '100%',
@@ -364,7 +365,7 @@ export default function Gallery({ config }: GalleryProps) {
           overflow: 'hidden',
           paddingTop: '2.5rem',
           background: '#f4f1e7',
-          backgroundImage: "url('/assets/gallery-floral-wall.svg')",
+          backgroundImage: `url('${asset('assets/gallery-floral-wall.svg')}')`,
           backgroundRepeat: 'repeat',
           backgroundSize: '220px 220px',
         }}
@@ -428,7 +429,7 @@ export default function Gallery({ config }: GalleryProps) {
             <div key={`${item.type}-${i}`}>
               {item.type === 'photo' ? (
                 <PhotoFrame
-                  src={item.content || undefined}
+                  src={item.content ? asset(item.content) : undefined}
                   groom={groom}
                   bride={bride}
                   index={i}

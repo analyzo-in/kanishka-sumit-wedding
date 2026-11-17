@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from '../lib/scroll';
+import { asset } from '../lib/assets';
 
 interface HeroProps {
   config: { date: string; weekday: string };
@@ -31,7 +32,7 @@ export default function Hero({ config }: HeroProps) {
 
   return (
     <section ref={sectionRef} className="scene" style={{ height: '100dvh', minHeight: 620, position: 'relative', overflow: 'hidden', background: '#d89b8b' }}>
-      <img ref={artRef} src="/assets/mandap-garden-v2.png" alt="Watercolour wedding mandap in a palace garden" style={{ position: 'absolute', inset: '-4%', width: '108%', height: '108%', objectFit: 'cover', objectPosition: 'center', willChange: 'transform' }} />
+      <img ref={artRef} src={asset('assets/mandap-garden-v2.png')} alt="Watercolour wedding mandap in a palace garden" style={{ position: 'absolute', inset: '-4%', width: '108%', height: '108%', objectFit: 'cover', objectPosition: 'center', willChange: 'transform' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(255,245,235,.15) 0%, rgba(92,22,38,.06) 47%, rgba(58,10,22,.58) 100%)' }} />
       <div ref={titleRef} style={{ position: 'absolute', zIndex: 2, top: '9%', left: 20, right: 20, textAlign: 'center', color: '#642039', textShadow: '0 1px 18px rgba(255,250,240,.76)' }}>
         <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.1rem, 4.8vw, 1.45rem)', lineHeight: 1.25, fontStyle: 'italic', margin: 0 }}>With the blessings of our families</p>

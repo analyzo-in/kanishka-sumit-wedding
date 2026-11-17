@@ -3,6 +3,7 @@ import './styles/tokens.css';
 import config from './invite.config.json';
 import type { InviteConfig } from './types';
 import { initMusic } from './lib/audio';
+import { asset } from './lib/assets';
 import { initScroll, destroyScroll } from './lib/scroll';
 import Cover from './scenes/Cover';
 import Hero from './scenes/Hero';
@@ -21,7 +22,7 @@ function App() {
   const [isOpened, setIsOpened] = useState(false);
 
   useEffect(() => {
-    initMusic(typedConfig.music);
+    initMusic(asset(typedConfig.music));
   }, []);
 
   useEffect(() => {

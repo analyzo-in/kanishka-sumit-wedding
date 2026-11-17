@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { startMusic, toggleMute, getMuted } from '../lib/audio';
+import { asset } from '../lib/assets';
 
 /* ── Design tokens (inline) ── */
 const T = {
@@ -135,7 +136,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: `linear-gradient(180deg, rgba(64, 14, 25, 0.2) 0%, rgba(57, 10, 20, 0.76) 100%), url('/assets/mandap-garden-v2.png') center / cover`,
+    background: `linear-gradient(180deg, rgba(64, 14, 25, 0.2) 0%, rgba(57, 10, 20, 0.76) 100%), url('${asset('assets/mandap-garden-v2.png')}') center / cover`,
     transition: 'opacity 0.8s ease, transform 0.8s ease',
   },
   jaali: {
