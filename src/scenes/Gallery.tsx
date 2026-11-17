@@ -429,7 +429,7 @@ export default function Gallery({ config }: GalleryProps) {
             <div key={`${item.type}-${i}`}>
               {item.type === 'photo' ? (
                 <PhotoFrame
-                  src={item.content ? asset(item.content) : undefined}
+                  src={item.content || undefined}
                   groom={groom}
                   bride={bride}
                   index={i}
